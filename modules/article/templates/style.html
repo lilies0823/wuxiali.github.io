@@ -1,0 +1,86 @@
+
+<!doctype html>
+<html>
+<head>
+<title>{?$jieqi_title?}_{?$article_title?}_{?$sortname?}_{?$jieqi_sitename?}</title>
+<meta http-equiv="Content-Type" content="text/html; charset={?$jieqi_charset?}" />
+<meta name="keywords" content="{?$article_title?},{?$jieqi_title?}" />
+<meta name="description" content="{?$jieqi_sitename?}提供了{?$author?}创作的{?$sortname?}《{?$article_title?}》干净清爽无错字的文字章节：{?$jieqi_title?}在线阅读。" />
+<link rel="stylesheet" type="text/css" href="/web8/css/biquge.css"/>
+<script type="text/javascript" src="/web8/js/jquery.min.js"></script>
+<script type="text/javascript" src="/web8/js/m.js"></script>
+<script type="text/javascript" src="/web8/js/bqg.js"></script>
+ <script type="text/javascript">
+ <!--
+ var preview_page = "{?if $preview_page|strstr:cid === false?}/read_{?$article_id?}/{?else?}/read_{?$article_id?}/{?$preview_chapterid?}.html{?/if?}";
+ var next_page = "{?if $next_page|strstr:dynamic !== false?}/read_{?$article_id?}/{?else?}/read_{?$article_id?}/{?$next_chapterid?}.html{?/if?}";
+ var index_page = "/read_{?$article_id?}/";
+ var article_id = "{?$article_id?}";
+ var chapter_id = "{?$chapter_id?}";
+ function jumpPage() {
+   var event = document.all ? window.event : arguments[0];
+   if (event.keyCode == 37) document.location = preview_page;
+   if (event.keyCode == 39) document.location = next_page;
+   if (event.keyCode == 13) document.location = index_page;
+ }
+ document.onkeydown=jumpPage;
+ -->
+ </script>
+</head>
+<body>
+	<div id="wrapper">
+		<script>login();</script>
+		<div class="header">
+			<div class="header_logo">
+				<a href="{?$jieqi_url?}">{?$jieqi_sitename?}</a>
+			</div>
+			<script type="text/javascript">bqg_panel();</script>
+		</div>
+		<div class="nav">
+			<ul>
+				<li><a href="/">首页</a></li>
+				<li><a href="/modules/article/bookcase.php">我的书架</a></li>
+				<li><a href="/fl1/">玄幻小说</a></li>
+				<li><a href="/fl2/">修真小说</a></li>
+				<li><a href="/fl3/">都市小说</a></li>
+				<li><a href="/fl4/">历史小说</a></li>
+				<li><a href="/fl6/">网游小说</a></li>
+				<li><a href="/fl7/">科幻小说</a></li>
+				<li><a href="/paihangbang/">排行榜单</a></li>
+				<li><a href="/xiaoshuodaquan/">全部小说</a></li>
+			</ul>
+		</div>
+		
+			<div class="box_con">
+				<div class="con_top">
+					<script>textselect();</script>
+					<a href="/">{?$jieqi_sitename?}</a> &gt; <a href="/fl{?$sortid?}/">{?$sortname?}</a> &gt; <a href="{?$url_articleinfo?}">{?$article_title?}</a> &gt; {?$jieqi_title?}
+				</div>
+				<div class="bookname">
+					<h1>{?$jieqi_title?}</h1>
+					<div class="bottem1">
+						<a href="javascript:;" onclick="showpop('/modules/article/uservote.php?id={?$articleid?}&ajax_request=1');">投推荐票</a> <a href="{?if $preview_page|strstr:cid === false?}/read_{?$article_id?}/{?else?}/read_{?$article_id?}/{?$preview_chapterid?}.html{?/if?}">上一章</a> &larr; <a href="/read_{?$article_id?}/">章节列表</a> &rarr; <a href="{?if $next_page|strstr:dynamic !== false?}/read_{?$article_id?}/{?else?}/read_{?$article_id?}/{?$next_chapterid?}.html{?/if?}">下一章</a> <a href="javascript:;" onclick="showpop('/modules/article/addbookcase.php?id={?$articleid?}&cid={?$chapterid?}&ajax_request=1');">加入书签</a>
+					</div>
+					<div class="lm">&nbsp;热门推荐：<script language="javascript" type="text/javascript" src="{?$jieqi_url?}/blockshow.php?bid=sidelist&module=article&filename=block_articlelist&classname=BlockArticleArticlelist&vars=allvisit%2C12%2C{?$sortid?}%2C0%2C0%2C0&template=web8_tuijian.html&contenttype=4&custom=0&publish=3&hasvars=1"></script></div>
+				</div>
+				<div class="dahengfu"><script type="text/javascript" src="/web8/js/ad4.js"></script></div>
+				<div id="content">{?$jieqi_content?}</div>
+				<script>bdshare();</script>
+				<div class="bottem2">
+					<a href="javascript:;" onclick="showpop('/modules/article/uservote.php?id={?$articleid?}&ajax_request=1');">投推荐票</a> <a href="{?if $preview_page|strstr:cid === false?}/read_{?$article_id?}/{?else?}/read_{?$article_id?}/{?$preview_chapterid?}.html{?/if?}">上一章</a> &larr; <a href="/read_{?$article_id?}/">章节目录</a> &rarr; <a href="{?if $next_page|strstr:dynamic !== false?}/read_{?$article_id?}/{?else?}/read_{?$article_id?}/{?$next_chapterid?}.html{?/if?}">下一章</a> <a href="javascript:;" onclick="showpop('/modules/article/addbookcase.php?id={?$articleid?}&cid={?$chapterid?}&ajax_request=1');">加入书签</a>
+				</div>
+				<div class="dahengfu"><script type="text/javascript" src="/web8/js/ad3.js"></script></div>
+				<script>document.write(unescape('%3Cdiv id="hm_t_31966"%3E%3C/div%3E%3Cscript charset="utf-8" src="http://crs.baidu.com/t.js?siteId=d2e9da389bfdafa33390af315a7cfba0&planId=31966&async=0&referer=') + encodeURIComponent(document.referrer) + '&title=' + encodeURIComponent(document.title) + '&rnd=' + (+new Date) + unescape('"%3E%3C/script%3E'));</script>
+			</div>
+		</div>
+		<div class="footer">
+		    <div class="footer_link">&nbsp;新书推荐：<script language="javascript" type="text/javascript" src="{?$jieqi_url?}/blockshow.php?bid=sidelist&module=article&filename=block_articlelist&classname=BlockArticleArticlelist&vars=postdate%2C12%2C{?$sortid?}%2C0%2C0%2C0&template=web8_tuijian.html&contenttype=4&custom=0&publish=3&hasvars=1"></script></div>
+			<div class="footer_cont">
+				<script>footer();</script>
+				<div class="reader_mark1"><a href="javascript:;" onclick="showpop('/modules/article/addbookcase.php?id={?$articleid?}&cid={?$chapterid?}&ajax_request=1');"></a></div>
+                                <div class="reader_mark0"><a href="javascript:;" onclick="showpop('/modules/article/uservote.php?id={?$articleid?}&ajax_request=1');"></a></div>
+			</div>
+		</div>
+	</div>
+
+</html>

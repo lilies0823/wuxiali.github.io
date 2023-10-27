@@ -1,0 +1,35 @@
+{?set jieqi_blocks_module = "article"?}
+<table class="grid" width="100%" align="center">
+<caption>以下是本次搜索的结果</caption>
+  <tr align="center">
+    <th width="33%">小说</th>
+    <th width="67%">最后更新</th>
+  </tr>
+  {?if $resultcount>0?}
+	  {?section name=i loop=$articlerows?}
+	  <tr>
+		<td class="odd"> [{?$articlerows[i].sort|truncate:4?}] <a href="{?$articlerows[i].url_articleinfo?}">{?$articlerows[i].articlename?}</a>{?if $articlerows[i].isfull == 1?}(完) {?/if?} / {?$articlerows[i].author?}</td>
+		<td class="even"><a href="/read/{?$articlerows[i].articleid?}/{?$articlerows[i].lastchapterid?}.html" target="_blank">{?$articlerows[i].lastvolume?} {?$articlerows[i].lastchapter?}</a> 20{?$articlerows[i].lastupdate|str_replace:"-":"/"?}</td>
+	  </tr>
+	  {?/section?}
+	  <tr>
+		<td colspan="2">  <br /><br />
+			<center><b>公告：应大家强烈要求，本站开放了站内搜索。</b></center>
+		    <br /><br />
+		</td>
+	  </tr>
+  {?else?}
+	  <tr>
+		<td colspan="2">抱歉，根据您提交的搜索词，本站没有找到相应的书名和作者。<br />
+						1/请你检查搜索词是否有错字、空格或者增加了TXT等这类与书名作者名无关的后缀。<br />
+						2/可能该书有色情等违禁内容被永久删除。<br />
+						3/使用下方百度搜索模糊匹配。<br />
+						4/<a href="/newmessage.php?tosys=1&title=申请添加小说&content=小说名：作者：">通知站长添加这本书</a>。
+				    <br /><br />
+			<center><div id="xx_search"><form name="form" action="http://www.baidu.com/s" id="sform" target="_blank"><input type="text" name="wd" class="search" id="wd" baiduSug="2" /><input name="ct" type="hidden" value="2222222" /><input type="hidden" value="20cm.com.cn" name="si"><input type="hidden" value="20cm.com.cn" name="sts"> <button id="sss" type="submit"> 原百度搜索 </button></form></div></center>
+		    <br /><br />
+			<center><b>公告：应大家强烈要求，本站开放了站内搜索。</b></center>
+		    <br /><br /></td>
+	  </tr>
+  {?/if?}
+</table>

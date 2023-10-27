@@ -1,0 +1,11 @@
+
+.pages{width:964px;border:3px solid #A6D3E8;padding:5px;margin-top:5px;}
+.pages1{width:670px;border:1px solid #e5e5e5;padding:3px;margin-bottom:5px;background:#fff;}
+.hkdlbxia{width:224px;border:1px solid #e5e5e5;padding:12px;margin-bottom:5px;text-align:center;background:#fff;}
+.pagelink{text-align:center;padding:5px;margin-top:2px;}
+.pagelink em{font-style:normal;border:1px solid #e5e5e5;background:#FFF;padding:6px;font-size:12px;}
+.pagelink first{border:1px solid #e5e5e5;background:#FFF;padding:6px;margin-left:2px;font-size:12px;}
+.pagelink a{border:1px solid #e5e5e5;background:#FFF;padding:6px;margin-left:2px;font-size:12px;}
+.pagelink a:hover{border:1px solid #88C6E5;background:#F4FBFF;padding:6px;margin-left:2px;}
+.pagelink strong{border:1px solid #e5e5e5;background:#FFF;padding:6px;margin-left:2px;font-size:12px;}
+.pagelink kbd{border:1px solid #e5e5e5;background:#FFF;padding:6px;margin-left:2px;}

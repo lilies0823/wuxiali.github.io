@@ -1,0 +1,1 @@
+document.writeln("<a href=\"http://web8.taobao.com\" target=\"_blank\"><img src=\"/web8/images/ad.jpg\" width=\"980\" height=\"65\" border=\"0\"></a>");

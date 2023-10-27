@@ -1,0 +1,254 @@
+
+img{ border:0px;}
+.checkbox, .radio{border-width: 0px;}
+
+.select{height: 21px;}
+
+/* structure */
+
+#wrapper{}
+
+#left{
+	float: left;
+	width: 185px;
+	margin-right:6px;
+}
+
+#right{
+	float: right;
+	width: 185px;
+}
+
+#centers{
+	float: left;
+	width: 578px;
+}
+
+#centerm{
+	float: left;
+	width: 980px;
+}
+
+#centerl{
+	float: left;
+	width: 960px;
+}
+
+#cleft{
+	float: left;
+	width: 475px;
+}
+
+#cright{
+	float: right;
+	width: 475px;
+}
+
+#content{
+
+}
+
+.main{
+	width: 980px;
+	clear: both;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.m_top{
+	background: #f6f6f6;
+	border-top: 3px solid #a9c9e2;
+	border-bottom: 1px solid #e4e4e4;
+	padding: 5px 0px;
+	margin-bottom: 3px;
+	height: 15px;
+}
+
+.m_head{
+	height: 60px;
+	margin-bottom: 3px;
+}
+
+.h_logo{
+	float:left;
+	width:180px;
+}
+
+.h_banner{
+	float:left;
+}
+
+.h_link{
+	float:right;
+	width:90px;
+	padding-top:6px;
+}
+
+.m_menu{
+	background:#55a0ff;
+	height:22px;
+	border-top:1px solid #e4e4e4;
+	border-bottom:1px solid #e4e4e4;
+	padding-top:3px;
+	margin-bottom:3px;
+}
+
+.m_foot{
+	background:#f6f6f6;
+	border:1px solid #e4e4e4;
+	text-align:center;
+	padding: 5px 0px;
+	margin-top:3px;
+	margin-bottom:10px;
+}
+
+.block{
+	border: 1px solid #a3bee8;
+	margin-bottom: 5px;
+}
+
+.blocktitle{
+	border-top: 1px solid #ffffff;
+	border-left: 1px solid #ffffff;
+	border-bottom: 1px solid #a3bee8;
+	font-weight: bold;
+	font-size: 14px;
+	background: #e9f1f8;
+	color: #054e86; 
+	height: 26px; 
+	line-height: 26px; 
+	padding-left: 10px;
+}
+
+.blockcontent{
+	padding: 3px;
+}
+
+.blocknote{
+	border-top: 1px solid #a3bee8;
+	padding: 3px;
+	text-align: center;
+	background: #f0f7ff;
+	line-height: 150%;
+}
+
+.blocktitle span{
+	position: relative;
+	bottom: -5px;
+	border-top: 1px solid #a3bee8;
+	border-left: 1px solid #a3bee8;
+	border-right: 1px solid #a3bee8;
+	background: #ffffff;
+	padding: 3px 6px 3px 6px;
+	color: #c42205;
+	height: 22px;
+	line-height: 22px; 
+}
+
+#left .block{
+	background: #e9f1f8;
+	padding: 2px;
+}
+
+#left .blocktitle{
+	border: 0px;
+	padding: 0px;
+	line-height: 24px; 
+	text-align: center;
+}
+
+#left .blockcontent{
+	border: 1px solid #d8e4ef;
+	background: #ffffff;
+}
+.none{ display:none;}
+.clear{ clear:both;}
+a:hover{ color:Red; text-decoration:underline;}
+#main{ width:980px; margin:auto;}
+#admin{ border:solid 2px #E1ECED; height:30px; line-height:30px; width:970px; text-align:center;margin:5px 0px 5px 0px; padding:3px;}
+table.grid caption, .gridtop {
+    width:976px;
+    background-color:#E1ECED;
+    border:solid 2px #C3DFEA;
+border-bottom:0px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: auto;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+table.grid {
+    border: 2px solid #C3DFEA;
+    border-collapse: collapse;
+    margin: auto;
+    padding: 3px;
+}
+table.grid td {
+    background-color: #FFFFFF !important;
+    border: 1px solid #C3DFEA;
+    padding: 4px;
+}
+.hottext{color:red;}
+#hotcontent{ padding-top:10px; }
+#hotcontent .l{ border:3px solid #C3DFEA; padding:0px 0px 10px 0px; float:left; width:695px; height:330px; overflow:hidden; background:#FEF9EF;}
+#hotcontent .l .item{ width:335px; float:left; padding:10px 0px 0px 10px;}
+#hotcontent .l .item .image{ float:left; width:120px;}
+#hotcontent .l .item .image img{ border:solid 1px #DDDDDD; padding:1px; background-color:White;}
+#hotcontent .l .item dl{ padding:0px 5px 0px 0px; float:right; width:190px;}
+#hotcontent .l .item dl dt{ height:25px; line-height:25px; overflow:hidden; font-size:14px; border-bottom:dotted 1px #A6D3E8; font-weight:bold; }
+#hotcontent .l .item dl dt span{ float:right; font-weight:normal; color:#B3B3B3;}
+#hotcontent .l .item dl dd{ padding:7px 0px 0px 0px; line-height:20px; text-indent:2em; height:120px; overflow:hidden;}
+#hotcontent .r{ float:right; width:265px;border:3px solid #C3DFEA;}
+#hotcontent h2{ padding:0px 0px 0px 10px; background-color:#E1ECED; height:30px; line-height:30px; font-size:14px; font-weight:bold; overflow:hidden; border-bottom:solid 1px #DDDDDD; margin: 0;}
+#flash {  height:308px; overflow: hidden;}
+.novelslistss{ margin: 0px auto; border:3px solid #C3DFEA; width:968px;  padding:3px; margin-top:10px;}
+.novelslistss h2{ margin:0px; overflow:hidden; padding:0px 0px 0px 10px; background-color:#A6D3E8; height:30px; line-height:30px; font-size:14px; font-weight:bold; border-bottom:solid 1px #DDDDDD;}
+
+.novelslistss ul{ padding:10px;}
+.novelslistss li{ padding:5px 0px 0px 0px; border-bottom:solid 1px #DDDDDD; height:25px; line-height:25px; overflow:hidden;}
+.novelslistss li span{ float:left; display:inline-block;}
+.novelslistss li .s1{ width:10%;}
+.novelslistss li .s2{ width:20%;}
+.novelslistss li .s3{ width:30%;}
+.novelslistss li .s3zs{ width:10%;}
+.novelslistss li .s3lz{ width:9%;}
+.novelslistss li .s4{ color:#B3B3B3; width:15%;text-align:right;}
+.novelslistss li .s5{ color:#B3B3B3; width:15%;text-align:right;}
+.novelslistss li .s6{ width:20%; color:#B3B3B3;}
+.novelslistss li .s7{ color:#B3B3B3; float:right; text-align:right;}
+.novelslistss li a{ color:#6F78A7;}
+
+.novelslist{ margin: 10px auto; border:3px solid #A6D3E8; width:968px;  padding:3px; background:#FEF9EF;}
+.novelslist .content{ border-right:dotted 1px #A6D3E8; padding:0px 3px; float:left; width:315px;}
+.novelslist .content h2{ border-bottom:solid 1px #A6D3E8; font-size:14px; font-weight:bold; padding-left:5px; line-height:25px; height:25px; overflow:hidden; margin: 0;}
+.novelslist .content .image{ padding:10px 0px 0px 5px; float:left; width:71px;}
+.novelslist .content .image img{ width:67px; height:82px; border:solid 1px #DDDDDD; padding:1px; background-color:white;}
+.novelslist .content dl{ padding:10px 0px 0px 0px; float:right; width:219px;}
+.novelslist .content dl dt{ height:25px; line-height:25px; overflow:hidden; font-weight:bold;}
+.novelslist .content dl dd{ line-height:20px; height:60px; overflow:hidden;}
+.novelslist .content ul{ padding:10px 0px 0px 5px;}
+.novelslist .content ul li{ color:#B3B3B3; height:20px; line-height:20px; font-size:12px; overflow:hidden; float:left; width:155px;}
+.novelslist .content ul li a{ font-size:13px;}
+.novelslist .border{ border:0px;}
+
+
+
+#firendlink{ width:972px; padding:1px; margin:10px auto 10px auto; border:solid 3px #A6D3E8; line-height:22px;overflow:hidden;background:#fff;}
+#firendlink ul{width:970px;}
+#firendlink li{height:25px;line-height:25px;float:left;overflow:hidden;padding:3px 1px 0px 10px;}
+#firendlink a{overflow:hidden; display:inline-block;color:#282828;text-align:center;}
+#firendlink a:hover{overflow:hidden;display:inline-block; color:#ff6600;text-decoration:none;}
+#firendlink h2{ margin:0px; overflow:hidden; padding:0px 0px 0px 10px; background-color:#DAEDF5; height:30px; line-height:30px; font-size:14px; font-weight:bold; border-bottom:solid 1px #DDDDDD;}
+
+.pages1{width:700px;border:2px solid #A6D3E8;padding:5px;margin-bottom:5px;}
+.pages{width:964px;border:2px solid #A6D3E8;padding:5px;margin-top:5px;}
+.pagelink{text-align:center;padding:5px;margin-top:2px;}
+.pagelink em{font-style:normal;border:1px solid #e5e5e5;background:#FFF;padding:6px;font-size:12px;}
+.pagelink first{border:1px solid #e5e5e5;background:#FFF;padding:6px;margin-left:2px;font-size:12px;}
+.pagelink a{border:1px solid #e5e5e5;background:#FFF;padding:6px;margin-left:2px;font-size:12px;}
+.pagelink a:hover{border:1px solid #88C6E5;background:#F4FBFF;padding:6px;margin-left:2px;}
+.pagelink strong{border:1px solid #e5e5e5;background:#FFF;padding:6px;margin-left:2px;font-size:12px;}
+.pagelink kbd{border:1px solid #e5e5e5;background:#FFF;padding:6px;margin-left:2px;}

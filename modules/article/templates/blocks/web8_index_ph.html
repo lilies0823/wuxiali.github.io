@@ -1,0 +1,15 @@
+{?section name=i loop=$articlerows?}
+{?if $i['order']==1?}
+<div class="top">
+<div class="image"><a href="{?$articlerows[i].url_articleinfo?}" target="_blank"><img src="{?$articlerows[i].url_image?}" alt="{?$articlerows.0.articlename?}" /></a></div>
+<dl><dt><a href="{?$articlerows[i].url_articleinfo?}">{?$articlerows.0.articlename?}</a> / Öø£º{?$articlerows[i].author?}</dt>
+<dd>{?$articlerows[i].intro|truncate:280:"..."?}</dd>
+</dl>
+<div class="clear"></div>
+</div>
+
+<ul>
+{?else?}
+<li><a href="{?$articlerows[i].url_articleinfo?}">{?$articlerows[i].articlename?}</a>/{?$articlerows[i].author?}</li>
+{?/if?}
+{?/section?}

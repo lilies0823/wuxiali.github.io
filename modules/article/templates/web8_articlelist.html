@@ -1,0 +1,50 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>{?$sort?}_好看的{?$sort?}_2014{?$sort?}排行榜_{?$jieqi_sitename?}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<meta name="keywords" content="{?$sort?}_好看的{?$sort?}_2014{?$sort?}排行榜" />
+<meta name="description" content="{?$jieqi_sitename?}是广大书友最值得收藏的{?$sort?}阅读网，网站收录了当前最好看的{?$sort?}，免费提供高质量的2014{?$sort?}排行榜，是广大{?$sort?}爱好者必备的小说阅读网！" />
+<link rel="stylesheet" type="text/css" href="/web8/css/biquge.css"/>
+<link rel="stylesheet" type="text/css" href="/web8/css/599h.css"/>
+<script type="text/javascript" src="/web8/js/jquery.min.js"></script>
+<script type="text/javascript" src="/web8/js/m.js"></script>
+<script type="text/javascript" src="/web8/js/bqg.js"></script>
+</head>
+<body>
+	{?include file = "web8/head.html" ?}
+
+<div id="main">
+{?if $jieqi_thisurl|strstr:class !== false?}
+<div id="hotcontent"><div class="ll">
+      {?block bid="bookvote" module="article" filename="block_articlelist" classname="BlockArticleArticlelist" side="0" title="热门搜索" vars="allvote,6,class,0,0,0" template="web8_fengmian.html" contenttype="4" custom="0" publish="3" hasvars="2"?}
+</div></div>
+
+{?/if?}
+
+<div id="newscontent">
+<div class="l">
+<h2>好看的{?$sort?}最近更新列表</h2>
+<ul>
+{?section name=i loop=$articlerows?}
+<li><span class="s2">《<a href="{?$articlerows[i].url_articleinfo?}" target="_blank">{?$articlerows[i].articlename?}</a>》{?if $articlerows[i].fullflag =="已完成"?}(完){?else?}{?/if?}</span><span class="s3"><a href="/read_{?$articlerows[i].articleid?}/{?$articlerows[i].lastchapterid?}.html" target="_blank">{?$articlerows[i].lastchapter?}</a>({?$articlerows[i].uptime|date:"m-d"?})</span><span class="s5">{?$articlerows[i].author?}</span></li>
+{?/section?}
+ 
+</ul><div class="pages1">
+ 
+{?$url_jumppage|str_replace:'/modules/article/index.php?fullflag=1&page=':'/quanben/'|str_replace:"/1/":"/" ?}
+ 
+</div></div>
+<div class="r">
+<h2>好看的{?$sort?}</h2>
+<ul>
+{?block bid="bookvote" module="article" filename="block_articlelist" classname="BlockArticleArticlelist" side="0" title="热门搜索" vars="allvisit,30,class,0,0,0" template="web8_fl.html" contenttype="4" custom="0" publish="3" hasvars="2"?}
+</ul><div class="hkdlbxia">喜欢就收藏我们</div></div>
+<div class="clear"></div></div>
+</div>
+		{?include file = "web8/foot.html" ?}
+	</div>
+</body>
+
+</html> 

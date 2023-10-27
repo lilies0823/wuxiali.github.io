@@ -1,0 +1,12 @@
+RewriteEngine on
+RewriteBase /
+
+RewriteRule ^paihangbang/rk\.html$ /paihangbang/rk.php
+RewriteRule ^paihangbang/sc\.html$ /paihangbang/sc.php
+RewriteRule ^paihangbang/index\.html$ /paihangbang/index.php
+RewriteRule ^xiaoshuodaquan/index\.html$ /xiaoshuodaquan/index.php
+RewriteRule ^read_([0-9]+)/$ /modules/article/reader\.php\?aid=$1
+RewriteRule ^read_([0-9]+)/([0-9]+)\.html$ /modules/article/reader\.php\?aid=$1&cid=$2
+RewriteRule ^fl([0-9]+)/$ /modules/article/articlelist\.php\?class=$1
+RewriteRule ^fl/([0-9]+)\.html$ /modules/article/articlelist\.php\?class=$1
+RewriteRule ^fl([0-9]+)/([0-9]+)\.html$ /modules/article/articlelist\.php\?class=$1&page=$2 
